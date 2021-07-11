@@ -8,8 +8,7 @@
 " s:DiffFile()
 "
 func! s:DiffFile(orig, modi) abort
-    if a:orig.filename !=# a:modi.filename
-        \ || len(a:orig.paragraphs) != len(a:modi.paragraphs)
+    if len(a:orig.paragraphs) != len(a:modi.paragraphs)
         throw 'InconsistentException'
     endif
 

@@ -69,7 +69,7 @@ func! ctrlsf#win#OpenMainWindow() abort
 
         let openpos = {
               \ 'top'         : 'topleft',
-              \ 'left'        : 'topleft vertical',
+              \ 'left'        : 'tab',
               \ 'left_local'  : 'leftabove vertical',
               \ 'bottom'      : 'botright',
               \ 'right'       : 'botright vertical',
